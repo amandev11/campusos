@@ -15,6 +15,17 @@ Shared across all four: overview dashboard, global search and Ctrl/⌘K command 
 
 ---
 
+## Live
+
+| | |
+| --- | --- |
+| Production | <https://campusos-drab.vercel.app> |
+| Repository | <https://github.com/amandev11/campusos> |
+
+The Vercel project is connected to this repository, so every push to `main` builds and deploys. `vercel.json` sets the Vite preset plus a catch-all rewrite to `/index.html`, because the app uses client-side routing and a deep link such as `/opportunities/tracker` would otherwise 404. Rewrites run after the filesystem, so hashed assets still resolve as real files.
+
+---
+
 ## Quick start
 
 ```bash
