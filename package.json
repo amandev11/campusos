@@ -1,0 +1,41 @@
+{
+  "name": "campusos",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CampusOS — your entire campus, one intelligent space.",
+  "engines": {
+    "node": "24.x"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "check:markup": "node tools/check-markup.mjs",
+    "check:contrast": "node tools/check-contrast.mjs",
+    "smoke": "node tools/smoke.mjs",
+    "smoke:reduced": "SMOKE_REDUCED=1 node tools/smoke.mjs",
+    "verify": "npm run typecheck && npm run check:markup && npm run check:contrast && npm run build && npm run smoke"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.57.0",
+    "motion": "^14.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.4",
+    "tailwind-merge": "^3.7.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "happy-dom": "^21.0.3",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4"
+  }
+}
