@@ -1,6 +1,10 @@
 # Never upload local-only files with a deploy.
 .vercel-token
+.vercel
+.env.local
+.env
 devserver.log
 devserver.pid
 tools/*.log
 *.tsbuildinfo
+artifacts/

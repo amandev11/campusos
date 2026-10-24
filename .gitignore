@@ -14,3 +14,5 @@ devserver.pid
 .vercel-token
 artifacts/
 gh-auth.log
+
+.env*
